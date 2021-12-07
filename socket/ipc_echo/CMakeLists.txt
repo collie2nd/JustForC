@@ -1,0 +1,13 @@
+project(echo_ipc)
+
+set(CMAKE_C_STANDARD 99)
+
+set(CMAKE_SOURCE_DIR_1 src/echo_srv.c)
+
+SET(CMAKE_SOURCE_DIR_2 src/echo_cli.c)
+
+ADD_EXECUTABLE(service.out ${CMAKE_SOURCE_DIR_1})
+
+ADD_EXECUTABLE(client.out ${CMAKE_SOURCE_DIR_2})
+
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/Release)

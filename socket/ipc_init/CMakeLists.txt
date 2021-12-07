@@ -1,0 +1,21 @@
+project(ipc_learning)
+
+set(CMAKE_C_STANDARD 99)
+
+set(CMAKE_SOURCE_DIR_1 1_src/msg_get.c)
+
+SET(CMAKE_SOURCE_DIR_2 2_src/msg_ctl.c)
+
+SET(CMAKE_SOURCE_DIR_3 3_src/msg_snd.c)
+
+SET(CMAKE_SOURCE_DIR_4 4_src/msg_rcv.c)
+
+ADD_EXECUTABLE(msgget.out ${CMAKE_SOURCE_DIR_1})
+
+ADD_EXECUTABLE(msgctl.out ${CMAKE_SOURCE_DIR_2})
+
+ADD_EXECUTABLE(msgsnd.out ${CMAKE_SOURCE_DIR_3})
+
+ADD_EXECUTABLE(msgrcv.out ${CMAKE_SOURCE_DIR_4})
+
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/Release)

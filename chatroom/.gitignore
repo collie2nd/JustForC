@@ -1,0 +1,5 @@
+cmake-bulid-debug/
+bin/
+Release
+.idea/
+cmake-build-debug/

@@ -1,0 +1,5 @@
+```bash
+gcc text2.c
+./a.out 1>t.txt 2>f.txt <input.txt
+```
+将标准输出流重定向到t.txt，标准错误流重定向到f.txt，标准输入流重定向为从input.txt内读取
